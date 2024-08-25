@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cal {
+            background-color: rgb(75,75,75);
+            border: 1px solid black;
+            border-radius: 20px;
+            width: 300px;
+            padding: 10px 0px;
+        }
+
+        * {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        #display {
+            width: 90%;
+            margin:5px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: #c9dfa3;
+            padding: 8px;
+        }
+
+        .btn {
+            width: 60px;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 30px;
+            background-color: rgb(124,124,124);
+        }
+
+        #equals {
+            width: 90%;
+            margin:10px;
+            border-radius: 30px;
+            height: 40px;
+            background-color: rgb(227,90,93);
+        }
+
+        #clear {
+            width: 60px;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 30px;
+            background-color: rgb(227,90,93);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Simple Calculator</h1>
+    <section class="cal">
+        <input type="text" id="display" readonly>
+        <div>
+            <button class="btn" data-value="7">7</button>
+            <button class="btn" data-value="8">8</button>
+            <button class="btn" data-value="9">9</button>
+            <button class="btn" data-value="/">/</button>
+        </div>
+        <div>
+            <button class="btn" data-value="4">4</button>
+            <button class="btn" data-value="5">5</button>
+            <button class="btn" data-value="6">6</button>
+            <button class="btn" data-value="*">*</button>
+        </div>
+        <div>
+            <button class="btn" data-value="1">1</button>
+            <button class="btn" data-value="2">2</button>
+            <button class="btn" data-value="3">3</button>
+            <button class="btn" data-value="-">-</button>
+        </div>
+        <div>
+            <button class="btn" data-value="0">0</button>
+            <button class="btn" data-value=".">.</button>
+            <button id="clear">C</button>
+            <button class="btn" data-value="+">+</button>
+        </div>
+        <button id="equals">=</button>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
